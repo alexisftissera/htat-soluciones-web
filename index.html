@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HTAT Soluciones — Mantenimiento predictivo de refrigeración y climatización | Córdoba Capital</title>
+<meta name="description" content="Mantenimiento predictivo y preventivo de cámaras frigoríficas, climatización comercial e industrial y compresores en Córdoba Capital. Medimos consumo y presión, documentamos cada visita con fotos y firma. Presupuesto sin cargo. Diagnóstico de estado inicial con costo.">
+<link rel="canonical" href="https://htat-soluciones.netlify.app/">
+<meta property="og:url" content="https://htat-soluciones.netlify.app/">
+<meta property="og:title" content="HTAT Soluciones — Medimos antes de que falle">
+<meta property="og:description" content="Mantenimiento predictivo y preventivo para empresas en Córdoba Capital. Cada visita documentada con fotos, mediciones y firma.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_AR">
+<meta name="geo.region" content="AR-C">
+<meta name="geo.placename" content="Córdoba Capital">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230D2B45'/><text x='50' y='68' font-size='44' font-weight='800' font-family='Arial' fill='%23F08C28' text-anchor='middle'>HT</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"HTAT Soluciones","description":"Mantenimiento predictivo y preventivo de refrigeración y climatización para empresas.","telephone":"+5493512869817","areaServed":"Córdoba Capital, Argentina","priceRange":"$$","address":{"@type":"PostalAddress","addressLocality":"Córdoba","addressRegion":"Córdoba","addressCountry":"AR"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}}
+</script>
+<style>
+:root{--azul:#0D2B45;--azul2:#16405F;--azul3:#0A1F33;--azul4:#07182A;--naranja:#F08C28;--naranja2:#D97A18;--blanco:#fff;--gris:#B9CADB;--gris2:#8FA9C0;--claro:#E6EEF6;--linea:rgba(255,255,255,.11);--r:14px}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--claro);background:var(--azul3);line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}svg{display:block}
+.wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;background-image:linear-gradient(rgba(255,255,255,.017) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.017) 1px,transparent 1px);background-size:64px 64px}
+body>*{position:relative;z-index:1}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:100;background:rgba(7,24,42,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--linea)}
+.hd{display:flex;align-items:center;justify-content:space-between;height:70px;gap:20px}
+.logo{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.logo b{font-size:1.5rem;font-weight:800;color:var(--naranja);letter-spacing:-.6px;line-height:1}
+.logo span{font-size:.62rem;font-weight:700;letter-spacing:2.8px;color:#fff;border-left:2px solid var(--naranja);padding-left:11px;text-transform:uppercase;line-height:1.25}
+nav{display:flex;gap:24px;align-items:center}
+nav a{font-size:.855rem;font-weight:500;color:var(--gris2);transition:color .18s;position:relative}
+nav a::after{content:"";position:absolute;left:0;bottom:-6px;width:0;height:1.5px;background:var(--naranja);transition:width .22s}
+nav a:hover{color:#fff}nav a:hover::after{width:100%}
+.hd-cta{display:flex;gap:9px;align-items:center;flex-shrink:0}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:12px 22px;border-radius:10px;font-weight:600;font-size:.875rem;transition:transform .16s cubic-bezier(.4,0,.2,1),background .2s,border-color .2s;cursor:pointer;border:1.5px solid transparent;letter-spacing:-.1px;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn svg{width:16px;height:16px;fill:currentColor;stroke:none}
+.btn .btn-ico-lineal{fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.btn-pri{background:var(--naranja);color:#08203A}.btn-pri:hover{background:#f59a3d}
+.btn-gh{background:rgba(255,255,255,.04);color:#fff;border-color:rgba(255,255,255,.18)}.btn-gh:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.3)}
+.menu-btn{display:none;background:none;border:none;color:#fff;font-size:1.45rem;cursor:pointer;padding:6px}
+
+/* ESPACIOS PARA FOTOS */
+.slot{
+  background:linear-gradient(150deg,rgba(255,255,255,.07),rgba(255,255,255,.022));
+  border:1px dashed rgba(240,140,40,.42);border-radius:var(--r);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:13px;padding:26px;text-align:center;position:relative;overflow:hidden;
+}
+.slot::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 40%,rgba(240,140,40,.09),transparent 62%)}
+.slot>*{position:relative;z-index:1}
+.slot svg{width:30px;height:30px;stroke:var(--naranja);stroke-width:1.5;fill:none;stroke-linecap:round;stroke-linejoin:round;opacity:.85}
+.slot b{font-size:.79rem;color:var(--gris);font-weight:600;line-height:1.45;max-width:210px}
+.slot small{font-size:.68rem;color:var(--naranja);letter-spacing:1.3px;text-transform:uppercase;font-weight:700}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;padding:80px 0 88px}
+.hero::before{content:"";position:absolute;right:-190px;top:-190px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(240,140,40,.12),transparent 68%)}
+.hero .wrap{max-width:900px;margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--naranja);font-size:.745rem;font-weight:700;letter-spacing:1.7px;text-transform:uppercase;margin-bottom:24px}
+.eyebrow i{width:6px;height:6px;background:var(--naranja);border-radius:50%;display:block;box-shadow:0 0 0 4px rgba(240,140,40,.16)}
+h1{font-size:clamp(2.1rem,4.4vw,3.35rem);font-weight:800;line-height:1.09;letter-spacing:-1.5px;color:#fff;margin-bottom:22px}
+h1 em{font-style:normal;color:var(--naranja);display:block}
+.lead{font-size:1.02rem;color:var(--gris);margin-bottom:32px;max-width:500px;line-height:1.7}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:34px}
+.btn-lg{padding:15px 27px;font-size:.93rem}
+.hero-media{display:none}
+
+
+/* SECCIONES */
+section{padding:94px 0}section.alt{background:var(--azul4)}
+.sec-head{text-align:center;max-width:640px;margin:0 auto 56px}
+.sec-head .tag{display:inline-block;color:var(--naranja);font-size:.715rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px}
+.sec-head .tag::before,.sec-head .tag::after{content:"";display:inline-block;width:22px;height:1px;background:rgba(240,140,40,.45);vertical-align:middle;margin:0 12px}
+h2{font-size:clamp(1.72rem,3.2vw,2.4rem);font-weight:800;color:#fff;line-height:1.18;letter-spacing:-.9px;margin-bottom:15px}
+.sec-head p{color:var(--gris);font-size:.975rem}
+
+/* GRID SERVICIOS CON FOTO */
+.srv{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:18px}
+.srv-c{background:rgba(255,255,255,.032);border:1px solid var(--linea);border-radius:var(--r);overflow:hidden;transition:border-color .22s,transform .22s}
+.srv-c:hover{border-color:rgba(240,140,40,.45);transform:translateY(-4px)}
+.srv-img{aspect-ratio:16/10;width:100%;object-fit:cover;transition:transform .4s}
+.srv-c:hover .srv-img{transform:scale(1.04)}
+.srv-body{padding:26px 26px 28px}
+.srv-c h3{font-size:1.06rem;color:#fff;margin-bottom:10px;font-weight:700;letter-spacing:-.3px;line-height:1.3}
+.srv-c>p{font-size:.87rem;color:var(--gris2);margin-bottom:16px;line-height:1.65}
+.srv-c ul{list-style:none;display:flex;flex-direction:column;gap:8px;padding-top:16px;border-top:1px solid var(--linea)}
+.srv-c li{font-size:.84rem;color:var(--gris);padding-left:20px;position:relative;line-height:1.5}
+.srv-c li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;background:var(--naranja);border-radius:1.5px}
+.srv-c .btn{margin-top:22px;width:100%}
+
+/* PILARES */
+.proceso{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.pas{background:rgba(255,255,255,.032);border:1px solid var(--linea);border-radius:var(--r);padding:32px 28px;position:relative;transition:border-color .22s,transform .22s}
+.pas:hover{border-color:rgba(240,140,40,.42);transform:translateY(-3px)}
+.pas-n{font-size:.72rem;font-weight:800;color:var(--naranja);letter-spacing:2.4px;margin-bottom:20px;font-variant-numeric:tabular-nums}
+.pas-ic{width:44px;height:44px;border-radius:12px;background:rgba(240,140,40,.12);border:1px solid rgba(240,140,40,.26);display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.pas-ic svg{width:21px;height:21px;stroke:var(--naranja);stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round}
+.pas h3{font-size:1.06rem;color:#fff;margin-bottom:11px;font-weight:700;letter-spacing:-.3px;line-height:1.32}
+.pas p{font-size:.875rem;color:var(--gris2);line-height:1.66}
+@media(min-width:1080px){.proceso{grid-template-columns:repeat(3,1fr)}}
+
+/* BLOQUES ALTERNADOS */
+.alt-blocks{display:flex;flex-direction:column;gap:72px}
+.ab{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.ab.rev .ab-m{order:2}
+.ab-img{aspect-ratio:5/4;width:100%}
+.ab-t .n{font-size:.7rem;font-weight:800;color:var(--naranja);letter-spacing:2px;margin-bottom:14px;display:block}
+.ab-t h3{font-size:1.55rem;color:#fff;margin-bottom:15px;font-weight:800;letter-spacing:-.6px;line-height:1.22}
+.ab-t>p{color:var(--gris);font-size:.96rem;margin-bottom:20px;line-height:1.72}
+.ab-btns{display:flex;gap:11px;flex-wrap:wrap}
+ul.check{list-style:none;display:flex;flex-direction:column;gap:12px;margin:24px 0 26px}
+ul.check li{font-size:.9rem;color:var(--claro);padding-left:33px;position:relative;line-height:1.55}
+ul.check li::before{content:"";position:absolute;left:0;top:2px;width:21px;height:21px;border-radius:6px;background:rgba(240,140,40,.16);border:1px solid rgba(240,140,40,.35)}
+ul.check li::after{content:"";position:absolute;left:6px;top:7px;width:8px;height:4.5px;border-left:1.8px solid var(--naranja);border-bottom:1.8px solid var(--naranja);transform:rotate(-45deg)}
+
+/* PLANES */
+.planes{display:grid;grid-template-columns:repeat(auto-fit,minmax(288px,1fr));gap:18px;align-items:start}
+.pl{background:rgba(255,255,255,.032);border:1px solid var(--linea);border-radius:16px;padding:34px 28px;position:relative;transition:border-color .22s,transform .22s}
+.pl:hover{border-color:rgba(255,255,255,.2);transform:translateY(-3px)}
+.pl.hot{border-color:var(--naranja);background:linear-gradient(180deg,rgba(240,140,40,.09),rgba(240,140,40,.025))}
+.pl .badge{position:absolute;top:-11px;left:28px;background:var(--naranja);color:#08203A;padding:4px 14px;border-radius:100px;font-size:.665rem;font-weight:800;letter-spacing:1.1px}
+.pl h3{font-size:1.11rem;color:#fff;margin-bottom:6px;font-weight:800;letter-spacing:.5px}
+.pl .for{font-size:.815rem;color:var(--naranja);margin-bottom:22px;font-weight:600}
+.pl .vis{font-size:.85rem;color:var(--gris2);padding:13px 0;border-top:1px solid var(--linea);border-bottom:1px solid var(--linea);margin-bottom:20px}
+.pl ul{list-style:none;display:flex;flex-direction:column;gap:10px;margin-bottom:26px}
+.pl li{font-size:.855rem;color:var(--gris);padding-left:22px;position:relative;line-height:1.5}
+.pl li::before{content:"";position:absolute;left:1px;top:7px;width:9px;height:5px;border-left:1.7px solid var(--naranja);border-bottom:1.7px solid var(--naranja);transform:rotate(-45deg)}
+.pl .btn{width:100%}
+
+/* SECTORES */
+.sec-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(168px,1fr));gap:12px}
+.sec-i{background:rgba(255,255,255,.032);border:1px solid var(--linea);border-radius:11px;padding:18px 19px;display:flex;align-items:center;gap:12px;transition:border-color .2s,background .2s}
+.sec-i:hover{border-color:rgba(240,140,40,.38);background:rgba(255,255,255,.05)}
+.sec-i svg{width:19px;height:19px;stroke:var(--naranja);stroke-width:1.7;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.sec-i b{font-size:.865rem;color:#fff;font-weight:600}
+
+/* FAQ */
+.faq{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.fq{background:rgba(255,255,255,.032);border:1px solid var(--linea);border-radius:12px;overflow:hidden;transition:border-color .2s}
+.fq[open]{border-color:rgba(240,140,40,.35)}
+.fq summary{padding:20px 24px;cursor:pointer;font-weight:600;color:#fff;font-size:.93rem;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:18px;letter-spacing:-.15px}
+.fq summary::-webkit-details-marker{display:none}
+.fq summary::after{content:"";width:11px;height:11px;border-right:1.8px solid var(--naranja);border-bottom:1.8px solid var(--naranja);transform:rotate(45deg) translateY(-2px);flex-shrink:0;transition:transform .22s}
+.fq[open] summary::after{transform:rotate(-135deg) translateY(-2px)}
+.fq div{padding:0 24px 22px;font-size:.885rem;color:var(--gris2);line-height:1.7}
+
+/* CONTACTO DUAL */
+.dual{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:840px;margin:0 auto}
+.dc{background:rgba(255,255,255,.04);border:1px solid var(--linea);border-radius:16px;padding:34px 30px;text-align:center;transition:border-color .22s,transform .22s}
+.dc:hover{border-color:rgba(240,140,40,.42);transform:translateY(-3px)}
+.dc .ic{width:48px;height:48px;border-radius:13px;background:rgba(240,140,40,.13);border:1px solid rgba(240,140,40,.3);display:flex;align-items:center;justify-content:center;margin:0 auto 18px}
+.dc .ic svg{width:22px;height:22px;fill:var(--naranja);stroke:none}
+.dc h3{font-size:1.14rem;color:#fff;margin-bottom:9px;font-weight:700;letter-spacing:-.3px}
+.dc p{font-size:.88rem;color:var(--gris2);margin-bottom:24px;line-height:1.65}
+
+/* CTA */
+.cta{background:linear-gradient(135deg,var(--naranja),var(--naranja2));border-radius:20px;padding:58px 44px;text-align:center;color:#08203A;box-shadow:0 30px 70px -28px rgba(240,140,40,.45)}
+.cta h2{color:#08203A;margin-bottom:14px}
+.cta p{font-size:1rem;opacity:.9;margin-bottom:30px;max-width:540px;margin-left:auto;margin-right:auto}
+.cta-btns{display:flex;gap:13px;justify-content:center;flex-wrap:wrap}
+.cta .btn-dark{background:#08203A;color:#fff}.cta .btn-dark:hover{background:#0D2B45}
+.cta .btn-out{background:transparent;color:#08203A;border-color:rgba(8,32,58,.32)}.cta .btn-out:hover{background:rgba(8,32,58,.07)}
+
+/* FOOTER */
+footer{background:var(--azul4);padding:58px 0 28px;border-top:1px solid var(--linea)}
+.f-g{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.1fr;gap:40px;margin-bottom:42px}
+.f-g h4{font-size:.7rem;letter-spacing:1.9px;text-transform:uppercase;color:var(--naranja);margin-bottom:16px;font-weight:700}
+.f-g p,.f-g a{font-size:.865rem;color:var(--gris2);display:block;margin-bottom:9px;line-height:1.6}
+.f-g a:hover{color:#fff}
+.f-b{border-top:1px solid var(--linea);padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;font-size:.775rem;color:var(--gris2)}
+.f-nota{font-size:.7rem;color:#5D7A93;max-width:620px;line-height:1.6;margin-top:16px;padding-top:16px;border-top:1px solid var(--linea)}
+
+@media(max-width:980px){.hero .wrap{grid-template-columns:1fr;gap:40px}.ab,.ab.rev .ab-m{grid-template-columns:1fr;order:0;gap:32px}.f-g{grid-template-columns:1fr 1fr;gap:30px}}
+@media(max-width:760px){nav{display:none;position:absolute;top:70px;left:0;right:0;background:var(--azul4);flex-direction:column;padding:22px;gap:17px;border-bottom:1px solid var(--linea);align-items:flex-start}nav.open{display:flex}nav a::after{display:none}.menu-btn{display:block}.hd-cta .btn-gh{display:none}section{padding:66px 0}.hero{padding:54px 0 50px}.f-g{grid-template-columns:1fr;gap:28px}.dual{grid-template-columns:1fr}.cta{padding:40px 24px}.sec-head .tag::before,.sec-head .tag::after{display:none}}
+
+/* ============================================================
+   TEMA CLARO - fondo blanco
+   Para volver al oscuro: borrar todo este bloque.
+   ============================================================ */
+:root{
+  --gris:#4C5C6E;--gris2:#5E6E80;--claro:#0D2B45;
+  --azul3:#F4F6F8;--azul4:#E8EEF3;--fondo:#F4F6F8;--fondo-alt:#EDF1F5;
+  --linea:rgba(13,43,69,.13);
+  --naranja-txt:#A85500;
+  --sombra:0 1px 2px rgba(13,43,69,.04),0 6px 20px -12px rgba(13,43,69,.14);
+  --sombra-h:0 2px 5px rgba(13,43,69,.05),0 16px 36px -14px rgba(13,43,69,.2);
+}
+body{background:var(--fondo);color:var(--gris2);background-image:radial-gradient(ellipse 120% 60% at 50% -10%,#FDFEFF 0%,var(--fondo) 55%,var(--fondo) 100%)}
+body::before{opacity:1;background-image:linear-gradient(rgba(13,43,69,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(13,43,69,.022) 1px,transparent 1px)}
+
+header{background:rgba(250,251,252,.9);border-bottom:1px solid var(--linea);box-shadow:0 1px 3px rgba(13,43,69,.05)}
+.logo span{color:var(--azul)}
+nav a{color:var(--gris2)}
+nav a:hover{color:var(--azul)}
+.menu-btn{color:var(--azul)}
+@media(max-width:760px){nav{background:#fff;box-shadow:0 12px 24px -12px rgba(13,43,69,.2)}}
+
+h1,h2{color:var(--azul)}
+h1 em{color:var(--naranja-txt)}
+.lead,.sec-head p,.ab-t>p{color:var(--gris)}
+.sec-head .tag{color:var(--naranja-txt)}
+.eyebrow{color:var(--naranja-txt)}
+
+.btn-gh{background:#fff;color:var(--azul);border-color:rgba(13,43,69,.2)}
+.btn-gh:hover{background:var(--azul4);border-color:rgba(13,43,69,.3)}
+
+.srv-c,.pas,.pl,.sec-i,.fq,.dc{background:#fff;border-color:var(--linea);box-shadow:var(--sombra)}
+.srv-c:hover,.pas:hover,.pl:hover,.sec-i:hover,.fq:hover,.dc:hover{box-shadow:var(--sombra-h);border-color:rgba(13,43,69,.2)}
+.sec-i:hover{background:#fff;border-color:rgba(240,140,40,.5)}
+.srv-c h3,.pas h3,.pl h3,.ab-t h3,.dc h3,.sec-i b,.fq summary,.ab-t .n{color:var(--azul)}
+.ab-t .n,.pas-n{color:var(--naranja-txt)}
+.srv-c>p,.pas p,.dc p,.fq div,.pl .vis{color:var(--gris2)}
+.srv-c li,.pl li{color:var(--gris)}
+ul.check li{color:var(--azul)}
+.fq[open]{border-color:rgba(240,140,40,.45)}
+.pl .for{color:var(--naranja-txt)}
+.pl.hot{background:#fff;border-color:var(--naranja);box-shadow:0 2px 6px rgba(13,43,69,.06),0 20px 44px -16px rgba(240,140,40,.4)}
+.pas-ic,.dc .ic{background:rgba(240,140,40,.1);border-color:rgba(240,140,40,.28)}
+
+.slot{background:linear-gradient(150deg,#FBFCFD,#E9EFF4)}
+.slot b{color:var(--gris2)}
+
+section.alt{background:var(--fondo-alt)}
+footer{background:var(--fondo-alt);border-top:1px solid var(--linea)}
+.f-g h4{color:var(--naranja-txt)}
+.f-g p,.f-g a,.f-b{color:var(--gris2)}
+.f-g a:hover{color:var(--azul)}
+.f-nota{color:#7A8A9A}
+
+.hero::before{background:radial-gradient(circle,rgba(240,140,40,.085),transparent 68%)}
+.cta{box-shadow:0 24px 60px -26px rgba(240,140,40,.5)}
+
+/* ============================================================
+   ENCABEZADO + HERO EN AZUL MARINO
+   Da un bloque de entrada oscuro y fuerte; el resto sigue claro.
+   Para volver atras: borrar este bloque.
+   ============================================================ */
+header{background:rgba(13,43,69,.96);border-bottom-color:rgba(255,255,255,.1);box-shadow:0 1px 3px rgba(0,0,0,.2)}
+.logo span{color:#fff}
+nav a{color:#A3BACE}
+nav a:hover{color:#fff}
+.menu-btn{color:#fff}
+@media(max-width:760px){nav{background:#0D2B45;box-shadow:0 12px 24px -12px rgba(0,0,0,.5)}}
+
+.hero{background:#0D2B45;background-image:radial-gradient(ellipse 95% 75% at 50% -5%,#17456A 0%,#0D2B45 62%)}
+.hero::before{background:radial-gradient(circle,rgba(240,140,40,.16),transparent 68%)}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:64px 64px}
+.hero h1{color:#fff}
+.hero h1 em{color:#F08C28}
+.hero .lead{color:#B7CADA}
+.hero .eyebrow{color:#F08C28}
+.hero .eyebrow i{box-shadow:0 0 0 4px rgba(240,140,40,.22)}
+.hero .btn-gh{background:transparent;color:#fff;border-color:rgba(255,255,255,.32)}
+.hero .btn-gh:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap hd">
+    <a href="#" class="logo"><b>HTAT</b><span>Soluciones</span></a>
+    <nav id="nav">
+      <a href="#servicios">Servicios</a><a href="#pilares">Cómo trabajamos</a><a href="#planes">Planes</a><a href="#sectores">Sectores</a><a href="#faq">Preguntas</a>
+    </nav>
+    <div class="hd-cta">
+      <a href="https://wa.me/5493512869817?text=Hola%2C%20quiero%20un%20presupuesto%20para%20mantenimiento" class="btn btn-pri" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.08-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.5 1.7.64.71.23 1.36.2 1.87.12.57-.08 1.75-.71 2-1.4.25-.69.25-1.28.17-1.4-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.02h-.01c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.16.83.84-3.08-.2-.32a8.2 8.2 0 0 1-1.26-4.37c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.15 8.27z"/></svg>WhatsApp</a>
+      <button class="menu-btn" id="mb" aria-label="Menú">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow"><i></i>Córdoba Capital · Atención en el día</div>
+      <h1>Medimos antes de que falle.<em>Eso es mantenimiento.</em></h1>
+      <p class="lead">Mantenimiento predictivo y preventivo de cámaras frigoríficas, climatización comercial e industrial y compresores. No esperamos a que el equipo se rompa: registramos consumo y presión, detectamos la desviación y actuamos a tiempo.</p>
+      <div class="hero-btns">
+        <a href="https://wa.me/5493512869817?text=Hola%2C%20quiero%20un%20presupuesto%20para%20mantenimiento" class="btn btn-pri btn-lg" target="_blank" rel="noopener">Pedir presupuesto sin cargo</a>
+        <a href="#planes" class="btn btn-gh btn-lg">Ver planes</a>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="tag">Servicios</div>
+      <h2>Qué hacemos</h2>
+      <p>Mantenimiento programado, correctivo y de emergencia para negocios e industria.</p>
+    </div>
+    <div class="srv">
+      <div class="srv-c">
+        <img class="srv-img" src="img/predictivo.jpg" alt="Técnico midiendo presión con manómetro">
+        <div class="srv-body"><h3>Mantenimiento predictivo</h3><p>Medimos consumo y presión en cada visita y lo comparamos con el historial del equipo. Cuando la curva se desvía, actuamos antes de que pare.</p><ul><li>Tendencia de consumo por equipo</li><li>Alertas de desviación</li><li>Informe con historial</li></ul><a href="https://wa.me/5493512869817" class="btn btn-gh" target="_blank" rel="noopener">Consultar</a></div>
+      </div>
+      <div class="srv-c">
+        <img class="srv-img" src="img/preventivo.jpg" alt="Técnico realizando mantenimiento de aire acondicionado">
+        <div class="srv-body"><h3>Mantenimiento preventivo</h3><p>Revisión programada con limpieza, ajustes y control. La forma más barata de mantener un equipo: es lo que evita la reparación de emergencia.</p><ul><li>Limpieza de filtros y serpentines</li><li>Control de presiones</li><li>Ajuste de temperaturas</li></ul><a href="https://wa.me/5493512869817" class="btn btn-gh" target="_blank" rel="noopener">Consultar</a></div>
+      </div>
+      <div class="srv-c">
+        <img class="srv-img" src="img/camaras.jpg" alt="Unidades condensadoras instaladas en fachada">
+        <div class="srv-body"><h3>Cámaras frigoríficas</h3><p>Mantenimiento y reparación de cámaras de conservación y congelado, cámaras chicas, antecámaras y exhibidoras para comercios y distribución.</p><ul><li>Cámaras positivas y negativas</li><li>Fugas y recarga de gas</li><li>Compresores y controles</li></ul><a href="https://wa.me/5493512869817" class="btn btn-gh" target="_blank" rel="noopener">Consultar</a></div>
+      </div>
+      <div class="srv-c">
+        <img class="srv-img" src="img/climatizacion.jpg" alt="Fachada con múltiples equipos de aire acondicionado">
+        <div class="srv-body"><h3>Climatización comercial</h3><p>Aire acondicionado split, VRF, cassete y unidades centrales para oficinas, comercios, hoteles y naves industriales.</p><ul><li>Limpieza y higienización</li><li>Recarga de gas</li><li>Reparación de tableros</li></ul><a href="https://wa.me/5493512869817" class="btn btn-gh" target="_blank" rel="noopener">Consultar</a></div>
+      </div>
+      <div class="srv-c">
+        <img class="srv-img" src="img/compresores.jpg" alt="Técnico manipulando equipos de refrigerante en taller">
+        <div class="srv-body"><h3>Compresores y frío industrial</h3><p>Mantenimiento de equipos de compresión, aire comprimido y sistemas de proceso para fábricas y depósitos.</p><ul><li>Control de amperaje y presión</li><li>Detección de fugas</li><li>Plan por criticidad</li></ul><a href="https://wa.me/5493512869817" class="btn btn-gh" target="_blank" rel="noopener">Consultar</a></div>
+      </div>
+      <div class="srv-c">
+        <img class="srv-img" src="img/urgencia.jpg" alt="Técnico atendiendo en exterior con herramientas">
+        <div class="srv-body"><h3>Servicio de emergencia</h3><p>Atención prioritaria para negocios que tienen producción, mercadería o servicios en riesgo por una falla.</p><ul><li>Respuesta en el día</li><li>Diagnóstico en el sitio</li><li>Alta de equipo de reemplazo</li></ul><a href="https://wa.me/5493512869817" class="btn btn-gh" target="_blank" rel="noopener">Consultar</a></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pilares" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="tag">Cómo trabajamos</div>
+      <h2>Un proceso ordenado</h2>
+      <p>Seis etapas claras, desde el primer mensaje hasta el cierre. En todo momento sabés en qué paso estás y qué viene después.</p>
+    </div>
+    <div class="proceso">
+      <div class="pas">
+        <div class="pas-n">01</div>
+        <div class="pas-ic"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M8 13h8M8 17h4"/></svg></div>
+        <h3>Presupuesto sin cargo</h3>
+        <p>Nos contás qué equipo tenés y te pasamos el presupuesto escrito, sin costo y sin compromiso.</p>
+      </div>
+      <div class="pas">
+        <div class="pas-n">02</div>
+        <div class="pas-ic"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div>
+        <h3>Revisamos el equipo</h3>
+        <p>Vamos al lugar, lo vemos y lo medimos. Verificar es indispensable: nunca conviene cotizar algo que no vimos.</p>
+      </div>
+      <div class="pas">
+        <div class="pas-n">03</div>
+        <div class="pas-ic"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="m6 15 4-5 3 3 5-7"/></svg></div>
+        <h3>Informe de estado</h3>
+        <p>Te decimos qué tiene el equipo: qué funciona, qué está fallando y qué conviene hacer. Con datos, no con impresión.</p>
+      </div>
+      <div class="pas">
+        <div class="pas-n">04</div>
+        <div class="pas-ic"><svg viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg></div>
+        <h3>Tu confirmación</h3>
+        <p>No hacemos nada sin tu autorización. Revisás el presupuesto, decidís y confirmás. Ahí recién empezamos.</p>
+      </div>
+      <div class="pas">
+        <div class="pas-n">05</div>
+        <div class="pas-ic"><svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0 5 5L21 21H3l1.3-9.7a2 2 0 0 1 1-1.4L14.7 6.3z"/></svg></div>
+        <h3>Realizamos la operación</h3>
+        <p>Ejecutamos el trabajo con los materiales que correspondan. Te avisamos si encontramos algo que no estaba en el presupuesto.</p>
+      </div>
+      <div class="pas">
+        <div class="pas-n">06</div>
+        <div class="pas-ic"><svg viewBox="0 0 24 24"><path d="M3 17c3 0 4-10 7-10 2.5 0 2 6 4.5 6 1.8 0 2.5-3 3.5-3"/><path d="M20 21c-2 0-2.8-2-2.8-4.2"/></svg></div>
+        <h3>Finaliza con informe</h3>
+        <p>Cerramos con fotos, mediciones y firma. Queda el registro de la intervención para que tengas historial.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section id="planes" class="alt">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="tag">Planes</div>
+      <h2>Mantenimiento con frecuencia definida</h2>
+      <p>Elegís el plan según la cantidad de equipos. El presupuesto inicial no tiene costo.</p>
+    </div>
+    <div class="planes">
+      <div class="pl"><h3>BÁSICO</h3><div class="for">1 a 4 equipos</div><div class="vis">2 visitas al año</div><ul><li>Revisión general y limpieza</li><li>Control de presiones y temperatura</li><li>Informe con fotos en cada visita</li><li>Registro de cada equipo</li></ul><a href="https://wa.me/5493512869817?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Plan%20B%C3%A1sico" class="btn btn-gh" target="_blank" rel="noopener">Consultar por este plan</a></div>
+      <div class="pl hot"><span class="badge">RECOMENDADO</span><h3>PROFESIONAL</h3><div class="for">5 a 15 equipos</div><div class="vis">4 visitas al año + pre-temporada</div><ul><li>Todo lo del plan Básico</li><li>Comparación de consumo entre visitas</li><li>Detección de desvíos con alerta</li><li>Atención prioritaria ante fallas</li><li>Plan de acción escrito cuando hay riesgo</li></ul><a href="https://wa.me/5493512869817?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Plan%20Profesional" class="btn btn-pri" target="_blank" rel="noopener">Consultar por este plan</a></div>
+      <div class="pl"><h3>EMPRESARIAL</h3><div class="for">15 equipos o más</div><div class="vis">Visitas mensuales o quincenales</div><ul><li>Todo lo del plan Profesional</li><li>Plan de mantenimiento calendarizado</li><li>Inventario completo de activos</li><li>Informe mensual consolidado</li><li>Reunión periódica de revisión</li><li>Acompañamiento en compras de equipos</li></ul><a href="https://wa.me/5493512869817?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Plan%20Empresarial" class="btn btn-gh" target="_blank" rel="noopener">Consultar por este plan</a></div>
+    </div>
+    <p style="text-align:center;margin-top:30px;font-size:.885rem;color:var(--gris2)">Los valores los confirmamos según cantidad y estado de los equipos. Escribinos y te pasamos el detalle de tu caso.</p>
+  </div>
+</section>
+
+<section id="sectores">
+  <div class="wrap">
+    <div class="sec-head"><div class="tag">Sectores</div><h2>Trabajamos con</h2><p>Negocios donde una parada de frío significa pérdida directa.</p></div>
+    <div class="sec-grid">
+      <div class="sec-i"><svg viewBox="0 0 24 24"><path d="M3 9h18l-1.5 11a1 1 0 0 1-1 .9H5.5a1 1 0 0 1-1-.9z"/><path d="M8 9V6a4 4 0 0 1 8 0v3"/></svg><b>Supermercados</b></div>
+      <div class="sec-i"><svg viewBox="0 0 24 24"><path d="M6 2v9a3 3 0 0 0 6 0V2M9 11v11M18 2c-1.5 2-2 4-2 6s.5 3 2 3v11"/></svg><b>Restaurantes</b></div>
+      <div class="sec-i"><svg viewBox="0 0 24 24"><path d="M2 20V10l6-4v14M8 20V10l6-4v14M14 20V10l6-4v14M2 20h20"/></svg><b>Fábricas</b></div>
+      <div class="sec-i"><svg viewBox="0 0 24 24"><path d="M3 21V8l9-5 9 5v13M9 21v-6h6v6"/></svg><b>Hoteles</b></div>
+      <div class="sec-i"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h.01M15 8h.01M10 21v-4h4v4"/></svg><b>Oficinas</b></div>
+      <div class="sec-i"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="1"/><path d="M7 6V4a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2M3 13h18"/></svg><b>Cámaras y depósitos</b></div>
+      <div class="sec-i"><svg viewBox="0 0 24 24"><path d="M9 3h6v5H9zM7 8h10v3a5 5 0 0 1-10 0zM12 16v5M9 21h6"/></svg><b>Clínicas y laboratorios</b></div>
+      <div class="sec-i"><svg viewBox="0 0 24 24"><path d="M1 3h13v13H1zM14 8h4l3 3v5h-7z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="17.5" cy="18.5" r="2.5"/></svg><b>Distribuidoras</b></div>
+      <div class="sec-i"><svg viewBox="0 0 24 24"><path d="M3 21V10l9-6 9 6v11M9 21v-5h6v5"/></svg><b>Consorcios</b></div>
+      <div class="sec-i"><svg viewBox="0 0 24 24"><path d="M6.5 6.5v11M17.5 6.5v11M3 9.5v5M21 9.5v5M6.5 12h11"/></svg><b>Gimnasios y clubes</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="alt">
+  <div class="wrap">
+    <div class="sec-head"><div class="tag">Preguntas frecuentes</div><h2>Lo que suelen preguntarnos</h2></div>
+    <div class="faq">
+      <details class="fq"><summary>¿Qué incluye el presupuesto sin cargo y qué paga el diagnóstico?</summary><div>El presupuesto es sin cargo: te lo mandamos por escrito con el detalle de lo que hay que hacer, sin compromiso. Lo que se paga es el diagnóstico de estado inicial, que es el trabajo técnico de medir y evaluar cada equipo. Ese costo se descuenta del valor del plan si contratás el servicio con nosotros.</div></details>
+      <details class="fq"><summary>¿Cada cuánto conviene hacer mantenimiento?</summary><div>Depende del equipo y del uso. Como regla general, 2 visitas al año para equipos de baja criticidad y 4 para los que sostienen la producción. Antes de recomendarte una frecuencia miramos qué equipo tenés y cómo lo usás.</div></details>
+      <details class="fq"><summary>¿Qué pasa si mi equipo falla entre visitas?</summary><div>Si sos cliente de plan, tenés atención prioritaria. Y más importante: como tenemos el historial de tu equipo, ya sabemos cómo venía funcionando y podemos diagnosticar mucho más rápido.</div></details>
+      <details class="fq"><summary>¿Trabajás con equipos de otras marcas?</summary><div>Sí, trabajamos con equipos de distintas marcas y tipos. Lo que importa no es la marca sino poder medirlo y documentarlo. En el relevamiento inicial vemos qué equipos tenés.</div></details>
+      <details class="fq"><summary>¿Hacés instalaciones?</summary><div>Sí, hacemos instalación y puesta en marcha. Pero siempre terminamos con un plan de mantenimiento: una instalación sin seguimiento después se convierte en un problema a futuro.</div></details>
+      <details class="fq"><summary>¿Atendés urgencias?</summary><div>Sí, con prioridad para clientes bajo contrato. Si tenés producción o mercadería en riesgo, escribinos por WhatsApp y lo coordinamos.</div></details>
+      <details class="fq"><summary>¿En qué zonas trabajás?</summary><div>Toda Córdoba Capital y alrededores. Si tu zona es un poco más lejana, consultanos igual y te confirmamos cobertura.</div></details>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap">
+    <div class="sec-head"><div class="tag">Contacto</div><h2>Estamos para asesorarte</h2><p>Elegí cómo te queda más cómodo hablar con nosotros.</p></div>
+    <div class="dual">
+      <div class="dc">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.08-.3-.15-1.25-.46-2.39-1.47-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.61-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.5 1.7.64.71.23 1.36.2 1.87.12.57-.08 1.75-.71 2-1.4.25-.69.25-1.28.17-1.4-.07-.13-.27-.2-.57-.35z"/><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2zm0 18.02h-.01c-1.5 0-2.97-.4-4.25-1.16l-.3-.18-3.16.83.84-3.08-.2-.32a8.2 8.2 0 0 1-1.26-4.37c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.15 8.27z"/></svg></div>
+        <h3>Hablamos por WhatsApp</h3>
+        <p>Escribinos contándonos qué equipos tenés. Te respondemos en el día y coordinamos la visita.</p>
+        <a href="https://wa.me/5493512869817?text=Hola%2C%20quiero%20un%20presupuesto%20para%20mantenimiento" class="btn btn-pri" target="_blank" rel="noopener">Escribir ahora</a>
+      </div>
+      <div class="dc">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.4 21 3 13.6 3 5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1.02l-2.2 2.2z"/></svg></div>
+        <h3>Agendamos una llamada</h3>
+        <p>Si preferís que te llamemos, coordinamos día y horario. Ideal para consultas de empresas.</p>
+        <a href="https://wa.me/5493512869817?text=Hola%2C%20quisiera%20agendar%20una%20llamada" class="btn btn-gh" target="_blank" rel="noopener">Agendar llamada</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="cta">
+      <h2>¿Cuándo fue la última vez que revisaste tus equipos?</h2>
+      <p>Si no te lo acordás, ese es el punto. El presupuesto es sin cargo y con informe escrito. Si contratás el plan, el relevamiento inicial no tenés que pagarlo.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/5493512869817?text=Hola%2C%20quiero%20un%20presupuesto%20para%20mantenimiento" class="btn btn-dark btn-lg" target="_blank" rel="noopener">Pedir presupuesto sin cargo</a>
+        <a href="https://wa.me/5493512869817" class="btn btn-out btn-lg" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-g">
+      <div><div class="logo" style="margin-bottom:15px"><b>HTAT</b><span>Soluciones</span></div><p style="max-width:280px">Mantenimiento predictivo y preventivo de refrigeración y climatización para empresas. Medimos, documentamos y mantenemos.</p></div>
+      <div><h4>Servicios</h4><a href="#servicios">Mantenimiento predictivo</a><a href="#servicios">Mantenimiento preventivo</a><a href="#servicios">Cámaras frigoríficas</a><a href="#servicios">Climatización comercial</a><a href="#servicios">Compresores</a></div>
+      <div><h4>Empresa</h4><a href="#pilares">Cómo trabajamos</a><a href="#planes">Planes</a><a href="#faq">Preguntas frecuentes</a></div>
+      <div><h4>Contacto</h4><a href="tel:+5493512869817">3512 869-817</a><a href="https://wa.me/5493512869817" target="_blank" rel="noopener">WhatsApp</a><p>Córdoba Capital, Argentina</p><p>Lun a Vie 8-18 · Sáb 8-13</p></div>
+    </div>
+    <div class="f-b"><span>© 2026 HTAT Soluciones. Todos los derechos reservados.</span><span>Presupuesto sin cargo · Atención en el día</span></div>
+    <p class="f-nota">Las imágenes de esta página son ilustrativas y se utilizan con licencia de uso gratuito de Pexels.com. Reemplazalas por fotografías de trabajos propios cuando estén disponibles.</p>
+
+  </div>
+</footer>
+
+<script>
+document.getElementById('mb').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open')});
+document.querySelectorAll('#nav a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open')})});
+</script>
+</body>
+</html>
