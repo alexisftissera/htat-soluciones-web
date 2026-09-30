@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://htat-soluciones.netlify.app/#negocio","name":"HTAT Soluciones","url":"https://htat-soluciones.netlify.app/","description":"Mantenimiento predictivo y preventivo de camaras frigorificas, climatizacion comercial e industrial y compresores. Servicio a domicilio en Cordoba Capital.","telephone":"+5493512869817","serviceType":["Mantenimiento predictivo de refrigeracion","Mantenimiento preventivo de climatizacion","Reparacion de camaras frigorificas","Mantenimiento de compresores","Servicio de climatizacion comercial e industrial"],"areaServed":{"@type":"City","name":"Cordoba Capital","containedInPlace":{"@type":"AdministrativeArea","name":"Cordoba","addressCountry":"AR"}},"address":{"@type":"PostalAddress","addressLocality":"Cordoba","addressRegion":"Cordoba","addressCountry":"AR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}]}
+{"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://htat-soluciones.netlify.app/#negocio","name":"HTAT Soluciones","url":"https://htat-soluciones.netlify.app/","description":"Mantenimiento predictivo y preventivo de camaras frigorificas, climatizacion comercial e industrial y compresores. Servicio a domicilio en Cordoba Capital.","telephone":"+5493512869817","geo":{"@type":"GeoCoordinates","latitude":-31.3987,"longitude":-64.184},"serviceType":["Mantenimiento predictivo de refrigeracion","Mantenimiento preventivo de climatizacion","Reparacion de camaras frigorificas","Mantenimiento de compresores","Servicio de climatizacion comercial e industrial"],"areaServed":{"@type":"City","name":"Cordoba Capital","containedInPlace":{"@type":"AdministrativeArea","name":"Cordoba","addressCountry":"AR"}},"address":{"@type":"PostalAddress","streetAddress":"Jujuy 1508","addressLocality":"Cordoba","addressRegion":"Cordoba","postalCode":"X5000KBJ","addressCountry":"AR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}]}
 </script>
 <style>
 :root{--azul:#0D2B45;--azul2:#16405F;--azul3:#0A1F33;--azul4:#07182A;--naranja:#F08C28;--naranja2:#D97A18;--blanco:#fff;--gris:#B9CADB;--gris2:#8FA9C0;--claro:#E6EEF6;--linea:rgba(255,255,255,.11);--r:14px}
@@ -163,6 +163,11 @@ ul.check li::after{content:"";position:absolute;left:6px;top:7px;width:8px;heigh
 .dc .ic svg{width:22px;height:22px;fill:var(--naranja);stroke:none}
 .dc h3{font-size:1.14rem;color:#fff;margin-bottom:9px;font-weight:700;letter-spacing:-.3px}
 .dc p{font-size:.88rem;color:var(--gris2);margin-bottom:24px;line-height:1.65}
+
+.taller{margin-top:26px;display:flex;align-items:flex-start;gap:15px;background:#fff;border:1px solid var(--linea);border-radius:var(--r);padding:24px 26px;box-shadow:var(--sombra);max-width:640px;margin-left:auto;margin-right:auto}
+.taller svg{width:22px;height:22px;stroke:var(--naranja-txt);stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0;margin-top:2px}
+.taller b{display:block;font-size:.95rem;color:var(--azul);font-weight:700;margin-bottom:5px;letter-spacing:-.2px}
+.taller span{font-size:.85rem;color:var(--gris2);line-height:1.6}
 
 /* CTA */
 .cta{background:linear-gradient(135deg,var(--naranja),var(--naranja2));border-radius:20px;padding:58px 44px;text-align:center;color:#08203A;box-shadow:0 30px 70px -28px rgba(240,140,40,.45)}
@@ -447,6 +452,10 @@ nav a:hover{color:#fff}
         <a href="https://wa.me/5493512869817?text=Hola%2C%20quisiera%20agendar%20una%20llamada" class="btn btn-gh" target="_blank" rel="noopener">Agendar llamada</a>
       </div>
     </div>
+    <div class="taller">
+      <svg viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <div><b>Taller: Jujuy 1508, Córdoba Capital</b><span>Zona de servicio: toda Córdoba Capital. También podés venir al taller.</span></div>
+    </div>
   </div>
 </section>
 
@@ -469,7 +478,7 @@ nav a:hover{color:#fff}
       <div><div class="logo" style="margin-bottom:15px"><b>HTAT</b><span>Soluciones</span></div><p style="max-width:280px">Mantenimiento predictivo y preventivo de refrigeración y climatización para empresas. Medimos, documentamos y mantenemos.</p></div>
       <div><h4>Servicios</h4><a href="#servicios">Mantenimiento predictivo</a><a href="#servicios">Mantenimiento preventivo</a><a href="#servicios">Cámaras frigoríficas</a><a href="#servicios">Climatización comercial</a><a href="#servicios">Compresores</a></div>
       <div><h4>Empresa</h4><a href="#pilares">Cómo trabajamos</a><a href="#planes">Planes</a><a href="#faq">Preguntas frecuentes</a></div>
-      <div><h4>Contacto</h4><a href="tel:+5493512869817">3512 869-817</a><a href="https://wa.me/5493512869817" target="_blank" rel="noopener">WhatsApp</a><p>Córdoba Capital, Argentina</p><p>Lun a Vie 8-18 · Sáb 8-13</p></div>
+      <div><h4>Contacto</h4><a href="tel:+5493512869817">3512 869-817</a><a href="https://wa.me/5493512869817" target="_blank" rel="noopener">WhatsApp</a><p>Taller: Jujuy 1508, Córdoba</p><p>Zona de servicio: Córdoba Capital</p><p>Lun a Vie 8-18 · Sáb 8-13</p></div>
     </div>
     <div class="f-b"><span>© 2026 HTAT Soluciones. Todos los derechos reservados.</span><span>Presupuesto sin cargo · Atención en el día</span></div>
     <p class="f-nota">Las imágenes de esta página son ilustrativas y se utilizan con licencia de uso gratuito de Pexels.com. Reemplazalas por fotografías de trabajos propios cuando estén disponibles.</p>
