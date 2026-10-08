@@ -277,6 +277,18 @@ nav a:hover{color:#fff}
 .hero .btn-gh{background:transparent;color:#fff;border-color:rgba(255,255,255,.32)}
 .hero .btn-gh:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.5)}
 
+/* Servicios: version compacta, 3 por fila */
+.srv-cmp{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.sc{display:flex;gap:14px;align-items:flex-start;background:rgba(255,255,255,.032);border:1px solid var(--linea);border-radius:var(--r);padding:14px;transition:border-color .22s,transform .22s}
+.sc:hover{border-color:rgba(240,140,40,.45);transform:translateY(-3px)}
+.sc-img{width:78px;height:78px;object-fit:cover;border-radius:9px;flex-shrink:0}
+.sc-b h3{font-size:.95rem;color:#fff;margin-bottom:5px;font-weight:700;letter-spacing:-.2px;line-height:1.25}
+.sc-b p{font-size:.82rem;color:var(--gris2);line-height:1.5}
+.srv-cta{margin-top:26px;text-align:center}
+.srv-cta .btn{padding:14px 30px;font-size:.93rem}
+@media(max-width:980px){.srv-cmp{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.srv-cmp{grid-template-columns:1fr}}
+
 /* Trabajos reales */
 .trb{columns:3;column-gap:16px}
 .trb figure{break-inside:avoid;margin:0 0 16px;border-radius:var(--r);overflow:hidden;position:relative;background:var(--azul3);border:1px solid var(--linea)}
@@ -326,31 +338,52 @@ nav a:hover{color:#fff}
       <h2>Qué hacemos</h2>
       <p>Mantenimiento programado, correctivo y de emergencia para negocios e industria.</p>
     </div>
-    <div class="srv">
-      <div class="srv-c">
-        <img class="srv-img" src="img/predictivo.jpg" alt="Técnico midiendo presión con manómetro">
-        <div class="srv-body"><h3>Mantenimiento predictivo</h3><p>Medimos consumo y presión en cada visita y lo comparamos con el historial del equipo. Cuando la curva se desvía, actuamos antes de que pare.</p><ul><li>Tendencia de consumo por equipo</li><li>Alertas de desviación</li><li>Informe con historial</li></ul><a href="https://wa.me/5493512869817" class="btn btn-gh" target="_blank" rel="noopener">Consultar</a></div>
-      </div>
-      <div class="srv-c">
-        <img class="srv-img" src="img/preventivo.jpg" alt="Técnico realizando mantenimiento de aire acondicionado">
-        <div class="srv-body"><h3>Mantenimiento preventivo</h3><p>Revisión programada con limpieza, ajustes y control. La forma más barata de mantener un equipo: es lo que evita la reparación de emergencia.</p><ul><li>Limpieza de filtros y serpentines</li><li>Control de presiones</li><li>Ajuste de temperaturas</li></ul><a href="https://wa.me/5493512869817" class="btn btn-gh" target="_blank" rel="noopener">Consultar</a></div>
-      </div>
-      <div class="srv-c">
-        <img class="srv-img" src="img/camaras.jpg" alt="Unidades condensadoras instaladas en fachada">
-        <div class="srv-body"><h3>Cámaras frigoríficas</h3><p>Mantenimiento y reparación de cámaras de conservación y congelado, cámaras chicas, antecámaras y exhibidoras para comercios y distribución.</p><ul><li>Cámaras positivas y negativas</li><li>Fugas y recarga de gas</li><li>Compresores y controles</li></ul><a href="https://wa.me/5493512869817" class="btn btn-gh" target="_blank" rel="noopener">Consultar</a></div>
-      </div>
-      <div class="srv-c">
-        <img class="srv-img" src="img/climatizacion.jpg" alt="Local con varios equipos de aire acondicionado instalados">
-        <div class="srv-body"><h3>Climatización comercial</h3><p>Aire acondicionado split, VRF, cassete y unidades centrales para oficinas, comercios, hoteles y naves industriales.</p><ul><li>Limpieza y higienización</li><li>Recarga de gas</li><li>Reparación de tableros</li></ul><a href="https://wa.me/5493512869817" class="btn btn-gh" target="_blank" rel="noopener">Consultar</a></div>
-      </div>
-      <div class="srv-c">
-        <img class="srv-img" src="img/compresores.jpg" alt="Técnico manipulando equipos de refrigerante en taller">
-        <div class="srv-body"><h3>Compresores y frío industrial</h3><p>Mantenimiento de equipos de compresión, aire comprimido y sistemas de proceso para fábricas y depósitos.</p><ul><li>Control de amperaje y presión</li><li>Detección de fugas</li><li>Plan por criticidad</li></ul><a href="https://wa.me/5493512869817" class="btn btn-gh" target="_blank" rel="noopener">Consultar</a></div>
-      </div>
-      <div class="srv-c">
-        <img class="srv-img" src="img/urgencia.jpg" alt="Técnico atendiendo en exterior con herramientas">
-        <div class="srv-body"><h3>Servicio de emergencia</h3><p>Atención prioritaria para negocios que tienen producción, mercadería o servicios en riesgo por una falla.</p><ul><li>Respuesta en el día</li><li>Diagnóstico en el sitio</li><li>Alta de equipo de reemplazo</li></ul><a href="https://wa.me/5493512869817" class="btn btn-gh" target="_blank" rel="noopener">Consultar</a></div>
-      </div>
+    <div class="srv-cmp">
+      <article class="sc">
+        <img class="sc-img" src="img/predictivo.jpg" alt="Técnico midiendo presión con manómetro">
+        <div class="sc-b">
+          <h3>Mantenimiento predictivo</h3>
+          <p>Medimos consumo y presión y lo comparamos con el historial. Actuamos antes de que el equipo pare.</p>
+        </div>
+      </article>
+      <article class="sc">
+        <img class="sc-img" src="img/preventivo.jpg" alt="Técnico realizando mantenimiento de aire acondicionado">
+        <div class="sc-b">
+          <h3>Mantenimiento preventivo</h3>
+          <p>Revisión programada con limpieza y control. Es lo que evita la reparación de emergencia.</p>
+        </div>
+      </article>
+      <article class="sc">
+        <img class="sc-img" src="img/camaras.jpg" alt="Unidades condensadoras instaladas en fachada">
+        <div class="sc-b">
+          <h3>Cámaras frigoríficas</h3>
+          <p>Cámaras de conservación y congelado, antecámaras y exhibidoras. Fugas y recarga de gas.</p>
+        </div>
+      </article>
+      <article class="sc">
+        <img class="sc-img" src="img/climatizacion.jpg" alt="Local con varios equipos de aire acondicionado instalados">
+        <div class="sc-b">
+          <h3>Climatización comercial</h3>
+          <p>Split, VRF, cassete y unidades centrales para oficinas, comercios y naves industriales.</p>
+        </div>
+      </article>
+      <article class="sc">
+        <img class="sc-img" src="img/compresores.jpg" alt="Técnico manipulando equipos de refrigerante en taller">
+        <div class="sc-b">
+          <h3>Compresores y frío industrial</h3>
+          <p>Compresión, aire comprimido y sistemas de proceso para fábricas y depósitos.</p>
+        </div>
+      </article>
+      <article class="sc">
+        <img class="sc-img" src="img/urgencia.jpg" alt="Técnico atendiendo en exterior con herramientas">
+        <div class="sc-b">
+          <h3>Servicio de emergencia</h3>
+          <p>Atención prioritaria cuando hay producción o mercadería en riesgo por una falla.</p>
+        </div>
+      </article>
+    </div>
+    <div class="srv-cta">
+      <a href="https://wa.me/5493512869817" class="btn btn-pri" target="_blank" rel="noopener">Consultar por WhatsApp</a>
     </div>
   </div>
 </section>
