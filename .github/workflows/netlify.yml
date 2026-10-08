@@ -1,0 +1,21 @@
+name: Publicar en Netlify
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Bajar el codigo
+        uses: actions/checkout@v4
+
+      - name: Instalar la CLI de Netlify
+        run: npm install -g netlify-cli
+
+      - name: Subir a Netlify
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+        run: netlify deploy --prod --dir . --message "push en main"

@@ -1,0 +1,12 @@
+# La CLI de Netlify escribe credenciales aca: nunca subir
+.netlify/config.json
+
+# Dependencias: se instalan en cada build
+node_modules/
+
+# Temporales del trabajo de imagenes y video
+prueba-*.jpg
+gA-*.jpg
+gB-*.jpg
+fv-*.jpg
+fc-*.jpg
