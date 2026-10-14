@@ -17,7 +17,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%230D2B45'/><text x='50' y='68' font-size='44' font-weight='800' font-family='Arial' fill='%23F08C28' text-anchor='middle'>HT</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@700;800&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"LocalBusiness","@id":"https://htat-soluciones.netlify.app/#negocio","name":"HTAT Soluciones","url":"https://htat-soluciones.netlify.app/","description":"Mantenimiento predictivo y preventivo de camaras frigorificas, climatizacion comercial e industrial y compresores. Servicio a domicilio en Cordoba Capital.","telephone":"+5493512869817","geo":{"@type":"GeoCoordinates","latitude":-31.3987,"longitude":-64.184},"serviceType":["Mantenimiento predictivo de refrigeracion","Mantenimiento preventivo de climatizacion","Reparacion de camaras frigorificas","Mantenimiento de compresores","Servicio de climatizacion comercial e industrial","Instalacion y service de aire acondicionado residencial","Instalacion y reparacion de termotanques solares","Service de calderas y calefactores","Venta e instalacion de calefactores de alta eficiencia"],"areaServed":{"@type":"City","name":"Cordoba Capital","containedInPlace":{"@type":"AdministrativeArea","name":"Cordoba","addressCountry":"AR"}},"address":{"@type":"PostalAddress","streetAddress":"Jujuy 1508","addressLocality":"Cordoba","addressRegion":"Cordoba","postalCode":"X5000KBJ","addressCountry":"AR"},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"08:00","closes":"18:00"}]}
 </script>
@@ -28,7 +28,7 @@ html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;color:var(--claro);background:var(--azul3);line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}svg{display:block}
 .wrap{width:100%;max-width:1180px;margin:0 auto;padding:0 24px}
-body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.5;background-image:linear-gradient(rgba(255,255,255,.017) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.017) 1px,transparent 1px);background-size:64px 64px}
+body::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;background-image:radial-gradient(880px 540px at 86% -8%,rgba(240,140,40,.15),transparent 62%),radial-gradient(780px 560px at -10% 38%,rgba(38,90,140,.3),transparent 60%),radial-gradient(680px 470px at 68% 112%,rgba(240,140,40,.1),transparent 65%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")}
 body>*{position:relative;z-index:1}
 
 /* HEADER */
@@ -211,7 +211,7 @@ footer{background:var(--azul4);padding:58px 0 28px;border-top:1px solid var(--li
   --sombra-h:0 2px 5px rgba(13,43,69,.05),0 16px 36px -14px rgba(13,43,69,.2);
 }
 body{background:var(--fondo);color:var(--gris2);background-image:radial-gradient(ellipse 120% 60% at 50% -10%,#FDFEFF 0%,var(--fondo) 55%,var(--fondo) 100%)}
-body::before{opacity:1;background-image:linear-gradient(rgba(13,43,69,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(13,43,69,.022) 1px,transparent 1px)}
+body::before{opacity:1;background-image:radial-gradient(880px 540px at 86% -8%,rgba(240,140,40,.12),transparent 62%),radial-gradient(780px 560px at -10% 38%,rgba(22,64,95,.11),transparent 60%),radial-gradient(680px 470px at 68% 112%,rgba(240,140,40,.07),transparent 65%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E")}
 
 header{background:rgba(250,251,252,.9);border-bottom:1px solid var(--linea);box-shadow:0 1px 3px rgba(13,43,69,.05)}
 .logo span{color:var(--azul)}
@@ -268,7 +268,7 @@ nav a:hover{color:#fff}
 
 .hero{background:#0D2B45;background-image:radial-gradient(ellipse 95% 75% at 50% -5%,#17456A 0%,#0D2B45 62%)}
 .hero::before{background:radial-gradient(circle,rgba(240,140,40,.16),transparent 68%)}
-.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:64px 64px}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;background:radial-gradient(620px 360px at 8% 112%,rgba(38,90,140,.4),transparent 65%),radial-gradient(520px 330px at 92% 12%,rgba(240,140,40,.13),transparent 62%)}
 .hero h1{color:#fff}
 .hero h1 em{color:#F08C28}
 .hero .lead{color:#B7CADA}
@@ -303,15 +303,86 @@ nav a:hover{color:#fff}
 @media(max-width:980px){.srv-cmp{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.srv-cmp{grid-template-columns:1fr}}
 
-/* Trabajos reales */
-.trb{columns:3;column-gap:16px}
-.trb figure{break-inside:avoid;margin:0 0 16px;border-radius:var(--r);overflow:hidden;position:relative;background:var(--azul3);border:1px solid var(--linea)}
-.trb img{width:100%;height:auto;display:block;transition:transform .45s cubic-bezier(.4,0,.2,1)}
-.trb figure:hover img{transform:scale(1.05)}
-.trb figcaption{position:absolute;left:0;right:0;bottom:0;padding:34px 18px 15px;font-size:.78rem;color:#fff;font-weight:600;letter-spacing:-.1px;line-height:1.4;background:linear-gradient(transparent,rgba(6,20,34,.93))}
-.trb-nota{margin-top:22px;text-align:center;font-size:.79rem;color:var(--gris2)}
-@media(max-width:980px){.trb{columns:2}}
-@media(max-width:560px){.trb{columns:1}}
+/* ============================================================
+   TRABAJOS REALES - Galeria horizontal tipo portfolio
+   Carrusel con drag, inercia y navegacion por flechas.
+   ============================================================ */
+.trb-wrap{position:relative}
+.trb-viewport{overflow:hidden;cursor:grab;margin:0 -24px;padding:6px 24px 10px}
+.trb-viewport.dragging{cursor:grabbing;scroll-snap-type:none}
+.trb-viewport.dragging *{user-select:none;-webkit-user-select:none}
+.trb{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+.trb::-webkit-scrollbar{display:none}
+.trb figure{
+  flex:0 0 auto;width:clamp(268px,32vw,392px);margin:0;scroll-snap-align:start;
+  border-radius:18px;overflow:hidden;position:relative;background:var(--azul4);
+  border:1px solid var(--linea);box-shadow:var(--sombra);
+  transition:box-shadow .3s,transform .3s,border-color .3s;
+}
+.trb figure:hover{transform:translateY(-6px);border-color:rgba(240,140,40,.42);box-shadow:0 2px 5px rgba(13,43,69,.05),0 28px 56px -22px rgba(13,43,69,.32)}
+.trb figure::after{
+  content:"";position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .32s;
+  background:radial-gradient(420px circle at var(--mx,50%) var(--my,50%),rgba(240,140,40,.16),transparent 62%);
+}
+.trb figure:hover::after{opacity:1}
+.trb img{width:100%;height:clamp(230px,34vw,306px);object-fit:cover;display:block;transform:scale(1.03);transition:transform .5s cubic-bezier(.4,0,.2,1),filter .4s}
+.trb figure:hover img{transform:scale(1.09)}
+.trb figcaption{
+  position:absolute;left:0;right:0;bottom:0;padding:60px 22px 20px;
+  font-size:.87rem;color:#fff;font-weight:700;letter-spacing:-.2px;line-height:1.35;
+  background:linear-gradient(transparent,rgba(6,20,34,.28) 32%,rgba(6,20,34,.9));
+}
+.trb figcaption em{
+  display:block;font-style:normal;font-size:.68rem;font-weight:800;letter-spacing:1.7px;
+  text-transform:uppercase;color:var(--naranja);margin-bottom:5px;
+}
+.trb-nav{display:flex;gap:9px;justify-content:center;margin-top:26px}
+.trb-btn{
+  width:44px;height:44px;border-radius:50%;background:#fff;cursor:pointer;
+  border:1px solid var(--linea);display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--sombra);transition:transform .18s,border-color .2s,background .2s,opacity .2s;
+}
+.trb-btn svg{width:17px;height:17px;fill:none;stroke:var(--azul);stroke-width:2.1;stroke-linecap:round;stroke-linejoin:round}
+.trb-btn:hover:not(:disabled){background:var(--azul);border-color:var(--azul);transform:scale(1.07)}
+.trb-btn:hover:not(:disabled) svg{stroke:#fff}
+.trb-btn:disabled{opacity:.32;cursor:not-allowed}
+.trb-nota{margin-top:18px;text-align:center;font-size:.79rem;color:var(--gris2)}
+.trb-hint{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:12px;font-size:.74rem;color:var(--gris2);letter-spacing:.3px}
+.trb-hint svg{width:26px;height:11px;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;opacity:.7}
+@media(max-width:760px){
+  .trb{width:80vw;flex-basis:auto}
+  .trb img{height:270px}
+}
+@media(min-width:761px){.trb figure{width:clamp(292px,30vw,388px)}}
+
+/* ============================================================
+   MEJORAS PREMIUM - tipografia display, reveal, micro-interacciones
+   ============================================================ */
+:root{--display:'Sora','Inter',system-ui,sans-serif}
+section{scroll-margin-top:72px}
+h1,h2,.ab-t h3{font-family:var(--display)}
+h1{font-size:clamp(2.3rem,5vw,3.7rem);letter-spacing:-2px;text-wrap:balance}
+h2{font-size:clamp(1.85rem,3.6vw,2.65rem);letter-spacing:-1.2px;text-wrap:balance}
+/* reveal on scroll (si no hay JS, todo queda visible) */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .75s cubic-bezier(.22,.61,.36,1);transition-delay:var(--d,0s)}
+.reveal.in{opacity:1;transform:none}
+/* entrada del hero */
+@keyframes heroUp{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.hero .eyebrow,.hero h1,.hero .lead,.hero .hero-btns,.hero .rr-card{animation:heroUp .8s cubic-bezier(.22,.61,.36,1) both}
+.hero h1{animation-delay:.08s}.hero .lead{animation-delay:.16s}.hero .hero-btns{animation-delay:.24s}.hero .rr-card{animation-delay:.32s}
+@keyframes heroGlow{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-40px,30px) scale(1.08)}}
+.hero::before{animation:heroGlow 12s ease-in-out infinite}
+/* botones: brillo al pasar + presion */
+.btn{position:relative;overflow:hidden}
+.btn:active{transform:scale(.97)}
+.btn-pri::after{content:"";position:absolute;top:0;left:-70%;width:45%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .55s ease;pointer-events:none}
+.btn-pri:hover::after{left:135%}
+/* tarjetas: glow naranja en hover */
+.sc:hover,.pas:hover,.pl:hover,.dc:hover,.sec-i:hover,.hog-c:hover,.trb figure:hover{box-shadow:0 18px 44px -18px rgba(240,140,40,.35),var(--sombra-h)}
+/* header con sombra al scrollear */
+header{transition:box-shadow .25s}
+header.scrolled{box-shadow:0 10px 30px -12px rgba(0,0,0,.4)}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.hero .eyebrow,.hero h1,.hero .lead,.hero .hero-btns,.hero .rr-card,.hero::before{animation:none}.btn-pri::after{display:none}}
 </style>
 </head>
 <body>
@@ -460,31 +531,43 @@ nav a:hover{color:#fff}
       <h2>Instalación y mantenimiento</h2>
       <p>Algunas fotos de los trabajos que hacemos.</p>
     </div>
-    <div class="trb">
-      <figure>
-        <img src="img/trabajo-condensadora.jpg" alt="Unidad exterior de aire acondicionado instalada en la vereda" loading="lazy">
-        <figcaption>Instalación</figcaption>
-      </figure>
-      <figure>
-        <img src="img/trabajo-dos-equipos.jpg" alt="Equipo de aire acondicionado en el techo de un local" loading="lazy">
-        <figcaption>Instalación</figcaption>
-      </figure>
-      <figure>
-        <img src="img/trabajo-instalacion.jpg" alt="Equipo de aire acondicionado instalado sobre una ventana" loading="lazy">
-        <figcaption>Instalación</figcaption>
-      </figure>
-      <figure>
-        <img src="img/trabajo-split-pared.jpg" alt="Varios equipos de aire acondicionado en un salón" loading="lazy">
-        <figcaption>Mantenimiento</figcaption>
-      </figure>
-      <figure>
-        <img src="img/trabajo-tecnico.jpg" alt="Técnico trabajando en una condensadora de aire acondicionado" loading="lazy">
-        <figcaption>Mantenimiento</figcaption>
-      </figure>
-      <figure>
-        <img src="img/trabajo-termotanque.jpg" alt="Reparación de termotanque solar" loading="lazy">
-        <figcaption>Mantenimiento</figcaption>
-      </figure>
+    <div class="trb-wrap">
+      <div class="trb-viewport">
+        <div class="trb" id="trb">
+          <figure>
+            <img src="img/trabajo-condensadora.jpg" alt="Unidad exterior de aire acondicionado instalada en la vereda" loading="lazy">
+            <figcaption><em>Instalación</em>Unidad exterior en fachada</figcaption>
+          </figure>
+          <figure>
+            <img src="img/trabajo-dos-equipos.jpg" alt="Equipo de aire acondicionado en el techo de un local" loading="lazy">
+            <figcaption><em>Instalación</em>Equipos en cubierta de local</figcaption>
+          </figure>
+          <figure>
+            <img src="img/trabajo-instalacion.jpg" alt="Equipo de aire acondicionado instalado sobre una ventana" loading="lazy">
+            <figcaption><em>Instalación</em>Split sobre ventana</figcaption>
+          </figure>
+          <figure>
+            <img src="img/trabajo-split-pared.jpg" alt="Varios equipos de aire acondicionado en un salón" loading="lazy">
+            <figcaption><em>Mantenimiento</em>Climatización de salón</figcaption>
+          </figure>
+          <figure>
+            <img src="img/trabajo-tecnico.jpg" alt="Técnico trabajando en una condensadora de aire acondicionado" loading="lazy">
+            <figcaption><em>Mantenimiento</em>Revisión de condensadora</figcaption>
+          </figure>
+          <figure>
+            <img src="img/trabajo-termotanque.jpg" alt="Reparación de termotanque solar" loading="lazy">
+            <figcaption><em>Mantenimiento</em>Service de termotanque solar</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="trb-nav">
+        <button class="trb-btn" id="trbPrev" aria-label="Trabajo anterior"><svg viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg></button>
+        <button class="trb-btn" id="trbNext" aria-label="Siguiente trabajo"><svg viewBox="0 0 24 24"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+      <div class="trb-hint">
+        <span>Arrastrá para ver más</span>
+        <svg viewBox="0 0 26 11"><path d="M1 5.5h24M21 1.5l4 4-4 4"/></svg>
+      </div>
     </div>
     <p class="trb-nota">Mandanos una foto por WhatsApp y te decimos qué hay que hacer.</p>
   </div>
@@ -641,8 +724,65 @@ nav a:hover{color:#fff}
 <script>
 document.getElementById('mb').addEventListener('click',function(){document.getElementById('nav').classList.toggle('open')});
 document.querySelectorAll('#nav a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('nav').classList.remove('open')})});
-/* Todos los botones de WhatsApp/presupuesto llevan a la página de presupuesto */
+/* Todos los botones de WhatsApp/presupuesto llevan a la pagina de presupuesto */
 document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(a){a.setAttribute('href','presupuesto.html')});
+
+/* Header con sombra al scrollear */
+var hd=document.querySelector('header');
+addEventListener('scroll',function(){hd.classList.toggle('scrolled',scrollY>8)},{passive:true});
+
+/* Reveal on scroll con stagger */
+(function(){
+  var sel='.sec-head,.srv-cmp>*,.srv-cta,.hog>.hog-c,.hog-extra,.trb-wrap,.proceso>*,.planes>*,.sec-grid>*,.faq>*,.dual>*,.taller,.cta';
+  var els=document.querySelectorAll(sel);
+  if(!('IntersectionObserver'in window)||!els.length)return;
+  document.querySelectorAll('.srv-cmp,.proceso,.planes,.sec-grid,.faq,.dual,.trb-nav').forEach(function(g){
+    Array.prototype.forEach.call(g.children,function(el,i){
+      el.style.setProperty('--d',Math.min(i*.07,.42)+'s');
+    });
+  });
+  els.forEach(function(el){el.classList.add('reveal')});
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el)});
+})();
+
+/* Galeria horizontal: drag, flechas y glow que sigue al mouse */
+(function(){
+  var trb=document.getElementById('trb');
+  if(!trb)return;
+  var vp=trb.closest('.trb-viewport'),
+      prev=document.getElementById('trbPrev'),
+      next=document.getElementById('trbNext');
+  function step(){var f=trb.querySelector('figure');return f?f.offsetWidth+20:340}
+  function upd(){var max=trb.scrollWidth-trb.clientWidth-2;prev.disabled=trb.scrollLeft<=2;next.disabled=trb.scrollLeft>=max}
+  prev.addEventListener('click',function(){trb.scrollBy({left:-step(),behavior:'smooth'})});
+  next.addEventListener('click',function(){trb.scrollBy({left:step(),behavior:'smooth'})});
+  trb.addEventListener('scroll',upd,{passive:true});upd();
+  addEventListener('resize',upd);
+  /* drag con mouse */
+  var down=false,sx=0,sl=0,moved=0;
+  vp.addEventListener('pointerdown',function(e){
+    if(e.pointerType!=='mouse'||e.button!==0)return;
+    down=true;moved=0;sx=e.clientX;sl=trb.scrollLeft;vp.classList.add('dragging');trb.style.scrollSnapType='none';
+  });
+  addEventListener('pointermove',function(e){
+    if(!down)return;var dx=e.clientX-sx;moved=Math.abs(dx);trb.scrollLeft=sl-dx;
+  });
+  addEventListener('pointerup',function(){
+    if(!down)return;down=false;vp.classList.remove('dragging');trb.style.scrollSnapType='';
+  });
+  trb.addEventListener('click',function(e){if(moved>6){e.preventDefault();e.stopPropagation()}},true);
+  /* glow que sigue al mouse */
+  trb.querySelectorAll('figure').forEach(function(f){
+    f.addEventListener('pointermove',function(e){
+      var r=f.getBoundingClientRect();
+      f.style.setProperty('--mx',(e.clientX-r.left)+'px');
+      f.style.setProperty('--my',(e.clientY-r.top)+'px');
+    });
+  });
+})();
 </script>
 </body>
 </html>
