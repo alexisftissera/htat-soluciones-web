@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://htat-soluciones.netlify.app/sitemap.xml
+Sitemap: https://htat-cordoba.netlify.app/sitemap.xml

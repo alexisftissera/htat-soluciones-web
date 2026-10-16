@@ -12,7 +12,7 @@ Todo el contenido del perfil, listo para copiar y pegar.
 |---|---|
 | Nombre | **HTAT Soluciones** |
 | Teléfono | 3512 869-817 |
-| Sitio web | https://htat-soluciones.netlify.app |
+| Sitio web | https://htat-cordoba.netlify.app |
 | Email | alexistissera1@gmail.com |
 | Dirección | Jujuy 1508, Córdoba Capital (X5000KBJ) |
 | Zona de servicio | Córdoba Capital |
