@@ -3,7 +3,7 @@
 Sitio institucional de **HTAT Soluciones**, mantenimiento predictivo y preventivo de
 refrigeración y climatización en Córdoba Capital, Argentina.
 
-**En línea:** https://htat-cordoba.netlify.app
+**En línea:** https://htat-soluciones-cba.netlify.app
 
 ## Qué es
 
@@ -58,4 +58,4 @@ terminados, reemplazarlas y borrar la nota del pie de página.
 3. Subir la carpeta a https://app.netlify.com/drop
 
 Para cambiar la dirección declarada en el código (canonical y og:url), reemplazar
-`https://htat-cordoba.netlify.app/` en el `<head>`.
+`https://htat-soluciones-cba.netlify.app/` en el `<head>`.
